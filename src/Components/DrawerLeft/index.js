@@ -267,21 +267,12 @@ function PersistentDrawerLeft(props) {
         HandleCloseSettingsDialog();
     }
 
-
     const sortList = () => {
-        props.searchedUsers.map(user => (
-            listaSort.push(`${user.name} tiene ${user.days} dias`)
-        ));
-        return listaSort.sort();
+      props.searchedUsers.map(user => (
+          listaSort.push(`${user.name} tiene ${user.days} dias`)
+      ));
+      return listaSort.sort();
     };
-
-    const verifyUsers = () => {
-      if (props.searchedUsers === []) {
-        return false;
-      } else {
-        return true;
-      }
-    }
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -370,8 +361,8 @@ function PersistentDrawerLeft(props) {
       <Main open={open} sx={{ width: '90%', justifyContent: 'center' }}>
         <DrawerHeader />
 
-        {/* {!verifyUsers && (
-          <Typography variant="h6" noWrap component="div">Agrega el primer usuario usuario</Typography>
+        {/* {!!notListUsers && (
+          <Typography variant="h6">Agrega el primer usuario usuario</Typography>
         )} */}
         
         {!!props.loading && (

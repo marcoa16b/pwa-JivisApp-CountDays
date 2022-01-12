@@ -15,7 +15,7 @@ function AppProvider(props) {
     const [nameToEdit, setNameToEdit] = React.useState('');
     const [modalAddValue, setModalAddValue] = React.useState(false);
     const [modalDelValue, setModalDelValue] = React.useState(false);
-
+    
     let searchedUsers = [];
 
     if (!searchValue.length >= 1){
