@@ -15,6 +15,8 @@ Algunas de las caracteristicas principales que dicha aplicacion debia incluir so
 * Generar un reporte en el que se informe de cada cambio realizado en los dias libres de cada usuario.
 * Guardar observaciones de porque se agregan o quitan dias a cada usuario.
 
+[Ver la app en producción](https://app-jivis.vercel.app)
+
 ## Scripts
 * `npm install` para instalar las dependencias
 * `npm run dev` para entorno de desarrollo
@@ -23,7 +25,6 @@ Algunas de las caracteristicas principales que dicha aplicacion debia incluir so
 ## Licencia
 
 MIT
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
